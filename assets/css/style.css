@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -82,4 +83,22 @@ a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: auto;
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 54px;
+}
+
+.whoDesc {
+    text-align: center;
+    padding-top: 20px;
+    width: 40pc;
+    font-size: 24px;
+
 }
