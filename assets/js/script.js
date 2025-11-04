@@ -21,16 +21,28 @@ tailwind.config = {
   },
 };
 
-function openModal(modalId) {
-  document.getElementById(modalId).classList.remove("hidden");
-}
+////////////////////////////////////////////////////////////////////////////////////
 
-function closeModal(modalId) {
-  document.getElementById(modalId).classList.add("hidden");
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const aboutSection = document.querySelector(".about-section");
+  const skillsSection = document.querySelector(".skills-section");
 
-document.addEventListener("click", (e) => {
-  if (e.target.classList.contains("fixed")) {
-    e.target.classList.add("hidden");
-  }
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("slide-in");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(aboutSection);
+  observer.observe(skillsSection);
 });
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
+
+////////////////////////////////////////////////////////////////////////////////////
+

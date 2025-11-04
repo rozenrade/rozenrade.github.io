@@ -5,42 +5,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <title>Quentin Baillard</title>
 </head>
 
-<body class="font-inter bg-white">
+<body class="font-inter bg-white overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-hide">
   <header>
     <nav class="bg-white fixed w-full top-0 z-50 shadow-md">
-      <div class="max-w-6xl mx-auto px-4">
+      <div class="max-w-6xl mx-auto px-4 w-full">
         <div class="flex justify-between items-center h-16">
 
-          <!-- Logo -->
           <img src="./assets/img/logoQuentin.png" alt="Logo" class="h-16 " />
 
-          <!-- Menu Desktop -->
           <div class="hidden md:flex space-x-8">
-            <a href="#" class="text-gray-800 ">Home</a>
-            <a href="#" class="text-gray-800 ">About</a>
-            <a href="#" class="text-gray-800 ">Projects</a>
-            <a href="#" class="text-gray-800 ">Contact</a>
+            <a href="#home" class="text-gray-800 ">Home</a>
+            <a href="#about" class="text-gray-800 ">About</a>
+            <a href="#projects" class="text-gray-800 ">Projects</a>
+            <a href="#contact" class="text-gray-800 ">Contact</a>
           </div>
 
-          <!-- Bouton menu burger -->
           <button id="menuBtn" class="md:hidden p-2 text-gray-800">☰</button>
 
-          <!-- Menu mobile -->
           <div id="mobileMenu"
             class="md:hidden fixed top-16 right-0 h-full w-64 shadow-lg transform translate-x-full opacity-0 transition-all duration-300 ease-in-out bg-white">
 
             <div class="flex flex-col p-6 space-y-4">
-              <a href="#" class="text-gray-800 hover:text-green-500">Home</a>
-              <a href="#" class="text-gray-800 hover:text-green-500">About</a>
-              <a href="#" class="text-gray-800 hover:text-green-500">Projects</a>
-              <a href="#" class="text-gray-800 hover:text-green-500">Contact</a>
+              <a href="#home" class="text-gray-800 hover:text-green-500">Home</a>
+              <a href="#about" class="text-gray-800 hover:text-green-500">About</a>
+              <a href="#projects" class="text-gray-800 hover:text-green-500">Projects</a>
+              <a href="#contact" class="text-gray-800 hover:text-green-500">Contact</a>
             </div>
           </div>
 
@@ -50,248 +46,114 @@
   </header>
 
   <main class="py-16">
-    <section
-      class="bg-[url(assets/img/background-black.jpg)] bg-cover bg-center h-[100vh] flex justify-center items-center">
+    <section id="home"
+      class="bg-[url(assets/img/background-black.jpg)] bg-cover bg-center h-[100vh] flex justify-center items-center fade-in opacity-0">
 
-      <h1 class="font-bold text-white text-6xl text-center">Bienvenue sur mon portfolio !</h1>
-
-    </section>
-
-    <!-- Who am I -->
-    <section class="bg-gray-100 p-4 shadow-md flex flex-col justify-center items-center text-center py-32 gap-y-16">
-
-      <h2 class="text-6xl font-bold">Quentin Baillard</h2>
-
-      <p class="text-2xl lg:w-[42pc] md:w-[32pc]">
-        Je suis un <strong>Développeur Web & Mobile junior</strong>, j'ai obtenu mon diplôme en Mars 2025. Je suis
-        actuellement, à la recherche d'une première expérience, étant passionné par la résolution de problèmes. Je me
-        spécialise principalement dans le développement back-end avec PHP / Symfony.
-      </p>
+      <h1 class="font-bold text-white text-6xl text-center fade-in">Bienvenue sur mon portfolio !</h1>
 
     </section>
 
-    <!-- My skills -->
-    <section class=" flex justify-center items-center flex-col text-center">
-      <h3>Mes compétences</h3>
+    <section id="about"
+      class="about-section bg-gradient-to-b from-gray-50 to-gray-100 p-4 shadow-md flex flex-col justify-center items-center text-center py-32 gap-y-16 opacity-0 transform translate-x-20 transition-all duration-700 h-[100vh]">
 
-      <div class="flex flex-wrap gap-x-16 gap-y-8 justify-center items-center lg:w-[54pc] py-12">
-        <div
-          class="bg-gray-100 rounded-lg shadow-xl p-6 w-[8pc] transform transition-all duration-300 border-transparent border-2 hover:scale-110 hover:border-2 hover:border-green-300"
-          onclick="openModal('html5-modal')">
-          HTML5</div>
+      <h2 class="text-6xl font-bold text-right">Quentin Baillard</h2>
+      <div class="flex flex-wrap items-center justify-center gap-x-16">
 
-        <div
-          class="bg-gray-100 rounded-lg shadow-xl p-6 w-[8pc] transform transition-all duration-300 border-transparent border-2 hover:scale-110 hover:border-2 hover:border-green-300"
-          onclick="openModal('css3-modal')">
-          CSS3</div>
-
-        <div
-          class="bg-gray-100 rounded-lg shadow-xl p-6 w-[8pc] transform transition-all duration-300 border-transparent border-2 hover:scale-110 hover:border-2 hover:border-green-300"
-          onclick="openModal('javascript-modal')">
-          Javascript</div>
-
-        <div
-          class="bg-gray-100 rounded-lg shadow-xl p-6 w-[8pc] transform transition-all duration-300 border-transparent border-2 hover:scale-110 hover:border-2 hover:border-green-300"
-          onclick="openModal('php-modal')">
-          PHP</div>
-
-        <div
-          class="bg-gray-100 rounded-lg shadow-xl p-6 w-[8pc] transform transition-all duration-300 border-transparent border-2 hover:scale-110 hover:border-2 hover:border-green-300"
-          onclick="openModal('symfony-modal')">
-          Symfony</div>
-
-        <div
-          class="bg-gray-100 rounded-lg shadow-xl p-6 w-[8pc] transform transition-all duration-300 border-transparent border-2 hover:scale-110 hover:border-2 hover:border-green-300"
-          onclick="openModal('mysql-modal')">
-          MySQL</div>
-
-        <div
-          class="bg-gray-100 rounded-lg shadow-xl p-6 w-[8pc] transform transition-all duration-300 border-transparent border-2 hover:scale-110 hover:border-2 hover:border-green-300"
-          onclick="openModal('mongodb-modal')">
-          MongoDB</div>
-
-        <div
-          class="bg-gray-100 rounded-lg shadow-xl p-6 w-[8pc] transform transition-all duration-300 border-transparent border-2 hover:scale-110 hover:border-2 hover:border-green-300"
-          onclick="openModal('react-modal')">
-          React</div>
-
+        <img src="./assets/img/IMG_0167.jpg" alt="Placeholder image profil" class="h-[32pc] border-2 border-gray-300 rounded-full shadow-lg">
+        <p class="text-2xl lg:w-[42pc] md:w-[32pc]">
+          Je suis un <strong>Développeur Web & Mobile junior</strong>, j'ai obtenu mon diplôme en Mars 2025. Je suis
+          actuellement à la recherche d'une première expérience, étant passionné par la résolution de problèmes. Je me
+          spécialise principalement dans le développement back-end avec PHP / Symfony.
+        </p>
       </div>
-
     </section>
 
 
-    <!-- My projects -->
-    <section class="py-12">
-      <h4 class="text-center">Mes projets</h4>
+    <section id="skills"
+      class="skills-section bg-gradient-to-b from-gray-50 to-gray-100 flex flex-col justify-center items-center text-center py-32 opacity-0 transform -translate-x-20 transition-all duration-700 gap-y-16 h-[100vh]">
+      <h3 class="text-6xl font-bold mb-12 ">Mes compétences</h3>
+      <p class="text-2xl lg:w-[42pc] md:w-[32pc] lg:w-[42pc] md:w-[32pc]">
+        Au cours de mon parcours, j'ai acquis de nombreuse compétences techniques, plus bas sont présentes celles que je
+        maîtrise et désire approfondir. Néanmoins je suis toujours désireux de connaissances de nouvelles compétences,
+        langages et technologies.
+      </p>
+      <div class="flex flex-wrap gap-x-16 gap-y-8 justify-center items-center" id="skills-cards"></div>
+    </section>
 
-      <article
-        class="bg-blue-100 p-4 shadow-lg flex flex-col justify-center items-center text-center py-12 gap-y-16 my-8">
-        <p>Isaac's bravery </p>
+    <section id="projects" class="py-32 bg-gradient-to-b from-gray-50 to-gray-100 h-[100vh]">
+      <div class="flex flex-col justify-center items-center gap-y-16">
 
-        <p>Description du projet</p>
+        <h4 class="text-center text-6xl font-bold">Mes projets</h4>
 
-        <div class="flex flex-row justify-between items-center w-full">
-          <p>11/2024 - 03/2025</p>
-          <p>HTML - CSS - Javascript - PHP - Symfony - MySQL - MongoDB</p>
-        </div>
+        <p class="text-2xl lg:w-[42pc] md:w-[32pc] text-center">J'ai pû participer en tant que développeur web junior à
+          quelques projets lors de ma formation</p>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-x-16">
 
-      </article>
+        <article
+          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center gap-y-16 p-4 mx-4 my-8 w-[30pc] rounded-xl md:h-[30pc]">
 
-      <article
-        class="bg-blue-100 p-4 shadow-lg flex flex-col justify-center items-center text-center py-12 gap-y-16 my-8">
-        <p>Behind Game Group </p>
+          <p>Isaac's bravery </p>
 
-        <p>Description du projet</p>
+          <img src="#" alt="Placeholder image projet">
+          <p>Isaac's Bravery est la concrétisation de mon projet personnel que j'ai développé lors de ma première année
+            de Développeur Web & Mobile. C'est un qui se base sur un de mes jeux favoris : <a
+              href="https://store.steampowered.com/app/113200/The_Binding_of_Isaac/"
+              class="hover:text-blue-300 transition-all duration-500 font-bold">The Binding of Isaac</a>. C'est
+            un " Rogue Like " développé par Edmund McMillen, regroupant plus de 600 items, un total de 34 personnages.
+          </p>
 
-        <div class="flex flex-row justify-between items-center w-full">
-          <p>12/2024 - 02/2025</p>
-          <p>HTML - CSS - Javascript - PHP - Symfony - React - MySQL</p>
-        </div>
-      </article>
+          <a href="https://github.com/rozenrade/isaac-webapp" class="link-underline">Lien vers le github de mon
+            projet</a>
+
+          <div class="flex justify-between items-center w-full gap-x-16 ">
+            <p class="">11/2024 - 03/2025</p>
+            <p class="max-w-[12pc]">HTML - CSS - Javascript - Symfony - MySQL - MongoDB</p>
+          </div>
+
+        </article>
+
+        <article
+          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 p-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center py-12 gap-y-16 mx-4 my-8 w-[30pc] rounded-xl md:h-[30pc]">
+          <p>Teona Passenger </p>
+
+          <img src="#" alt="Placeholder image figma">
+          <p>Teona Passenger est un projet qui appartient au groupe : Behind Game Group. C'est un projet qui vise à
+            s'inspirer de Momondo, une application web permettant à l'utilisateur de se renseigner sur les moyens/prix
+            afin de voyager, principalement en avion. L'application fait usage d'une API externe vis-à-vis de la
+            fourniture des prix.</p>
+
+          <a href="#" class="link-underline">Lien vers les visuels du projet</a>
+          <div class="flex justify-between items-center w-full">
+            <p>12/2024 - 02/2025</p>
+            <p class="max-w-[12pc]">HTML - CSS - Javascript - Symfony - React - MySQL</p>
+          </div>
+        </article>
+      </div>
 
     </section>
 
   </main>
 
-  <!-- Contact me -->
+  <footer>
 
-  <!-- <footer>
-    <ul>
-      <li><a href="https://github.com/rozenrade">Mon Github</a></li>
-      <li>
-        <a href="https://www.linkedin.com/in/quentin-baillard-99bb70348/">Mon profil LinkedIn</a>
-      </li>
-      <li>
-        <a href="mailto:quentin.baillard05@gmail.com">Envoyer un mail</a>
-      </li>
-    </ul>
-  </footer> -->
+    <div id="contact" class="flex flex-col text-center h-[100vh]">
 
-  <!-- Modals pour les compétences -->
-  <div id="html5-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4">
-    <div class="bg-white rounded-xl p-6 max-w-md w-full transform transition-all duration-300">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold text-gray-900">HTML5</h3>
-        <button onclick="closeModal('html5-modal')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+      <div class=" bg-gray-100 p-4 shadow-md w-[30pc] ml-auto">
+        <p>Toujours prêt à créer de nouvelles relations sur <a
+            href="https://www.linkedin.com/in/quentin-baillard-99bb70348/">LinkedIn</a></p>
       </div>
-      <div class="text-gray-700 space-y-3">
-        <p><strong>Niveau :</strong> Intermédiaire</p>
-        <p><strong>Expérience :</strong> 2 ans</p>
-        <p>Maîtrise partielle.</p>
-        <p>Connaissances en optimisation SEO et Expérience en structures responsives.</p>
+
+      <div class=" bg-gray-100 p-4 shadow-md w-[30pc]">
+        <p>Un projet ? Une idée ? Une discussion ? Je reste disponible par mail : <a
+            href="mailto:baillardquentin.pro@gmail.com">baillardquentin.pro@gmail.com</a></p>
       </div>
     </div>
-  </div>
 
-  <div id="css3-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4">
-    <div class="bg-white rounded-xl p-6 max-w-md w-full transform transition-all duration-300">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold text-gray-900">CSS3</h3>
-        <button onclick="closeModal('css3-modal')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
-      </div>
-      <div class="text-gray-700 space-y-3">
-        <p><strong>Niveau :</strong> Intermédiaire</p>
-        <p><strong>Expérience :</strong> 2 ans</p>
-        <p>Conception de sites web avec inclusion de Bootstrap, Sass, Tailwind.</p>
-        <p>Expérience en optimisation SEO et structures responsives.</p>
-      </div>
-    </div>
-  </div>
+  </footer>
 
-  <div id="javascript-modal"
-    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4">
-    <div class="bg-white rounded-xl p-6 max-w-md w-full transform transition-all duration-300">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold text-gray-900">Javascript</h3>
-        <button onclick="closeModal('javascript-modal')"
-          class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
-      </div>
-      <div class="text-gray-700 space-y-3">
-        <p><strong>Niveau :</strong> Débutant</p>
-        <p><strong>Expérience :</strong> 1 an</p>
-        <p>Création de fonctions à rôles mineurs (ouverture et fermeture de menu burger, buttons, etc.)</p>
-        <p>Expérience en carousels, menu déroulant, changements de classes CSS.</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="php-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4">
-    <div class="bg-white rounded-xl p-6 max-w-md w-full transform transition-all duration-300">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold text-gray-900">PHP</h3>
-        <button onclick="closeModal('php-modal')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
-      </div>
-      <div class="text-gray-700 space-y-3">
-        <p><strong>Niveau :</strong> Intermédiaire</p>
-        <p><strong>Expérience :</strong> 2 ans</p>
-        <p>Connaissances en POO, compréhension de l'architecture MVC.</p>
-        <p>Projet développés en PHP</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="symfony-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4">
-    <div class="bg-white rounded-xl p-6 max-w-md w-full transform transition-all duration-300">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold text-gray-900">Symfony</h3>
-        <button onclick="closeModal('symfony-modal')"
-          class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
-      </div>
-      <div class="text-gray-700 space-y-3">
-        <p><strong>Niveau :</strong> Intermédiaire</p>
-        <p><strong>Expérience :</strong> 1 an</p>
-        <p>Création d'application web structurée avec gestion des routes, vues.</p>
-        <p>Intégration des entités avec ODM - ORM. gestion de BDD SQL & NoSQL.</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="mysql-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4">
-    <div class="bg-white rounded-xl p-6 max-w-md w-full transform transition-all duration-300">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold text-gray-900">MySQL</h3>
-        <button onclick="closeModal('mysql-modal')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
-      </div>
-      <div class="text-gray-700 space-y-3">
-        <p><strong>Niveau :</strong> Intermédiaire</p>
-        <p><strong>Expérience :</strong> 2 ans</p>
-        <p>Mises en relations de tables et de données, gestion de BDD SQL & Insertion.</p>
-        <p>Expérience en situation réelles lors de projets développés en groupe.</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="mongodb-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4">
-    <div class="bg-white rounded-xl p-6 max-w-md w-full transform transition-all duration-300">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold text-gray-900">MongoDB</h3>
-        <button onclick="closeModal('mongodb-modal')"
-          class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
-      </div>
-      <div class="text-gray-700 space-y-3">
-        <p><strong>Niveau :</strong> Débutant</p>
-        <p><strong>Expérience :</strong> 1 an</p>
-        <p>Mise en relations de tables, gestion et insertions de données.</p>
-        <p>Insertions de données via Framework (Symfony) et via Node.JS (utilisation de Mongoose).</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="react-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4">
-    <div class="bg-white rounded-xl p-6 max-w-md w-full transform transition-all duration-300">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold text-gray-900">React</h3>
-        <button onclick="closeModal('react-modal')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
-      </div>
-      <div class="text-gray-700 space-y-3">
-        <p><strong>Niveau :</strong> Débutant</p>
-        <p><strong>Expérience :</strong> 1 an</p>
-        <p>Utilisation de hooks, composants, props.</p>
-        <p>Expérience en situation lors d'un projet fait en groupe en inclusion d'un autre framework (Symfony).</p>
-      </div>
-    </div>
-  </div>
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/modals.js"></script>
 </body>
 
 </html>
