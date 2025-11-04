@@ -188,3 +188,7 @@ html {
   -ms-overflow-style: none;  /* IE et Edge */
   scrollbar-width: none;      /* Firefox */
 }
+
+#mobileMenu, html, body{
+  overflow-x: hidden;
+}

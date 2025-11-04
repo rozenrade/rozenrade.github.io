@@ -54,13 +54,14 @@
     </section>
 
     <section id="about"
-      class="about-section bg-gradient-to-b from-gray-50 to-gray-100 p-4 shadow-md flex flex-col justify-center items-center text-center py-32 gap-y-16 opacity-0 transform translate-x-20 transition-all duration-700 h-[100vh]">
+      class="about-section bg-gradient-to-b from-gray-50 to-gray-100 p-4 shadow-md flex flex-col justify-center items-center text-center py-32 gap-y-16 opacity-0 transform translate-x-20 transition-all duration-700 h-[100vh] ">
 
-      <h2 class="text-6xl font-bold text-right">Quentin Baillard</h2>
-      <div class="flex flex-wrap items-center justify-center gap-x-16">
+      <h2 class="text-6xl font-bold md:text-right">Quentin Baillard</h2>
+      <div class="flex flex-wrap items-center justify-center md:gap-x-16  gap-x-4">
 
-        <img src="./assets/img/IMG_0167.jpg" alt="Placeholder image profil" class="h-[32pc] border-2 border-gray-300 rounded-full shadow-lg">
-        <p class="text-2xl lg:w-[42pc] md:w-[32pc]">
+        <img src="./assets/img/IMG_0167.jpg" alt="Placeholder image profil"
+          class="h-16 md:h-[32pc] border-2 border-gray-300 rounded-full shadow-lg">
+        <p class="text-2xl lg:w-[42pc] md:w-[32pc] w-full">
           Je suis un <strong>Développeur Web & Mobile junior</strong>, j'ai obtenu mon diplôme en Mars 2025. Je suis
           actuellement à la recherche d'une première expérience, étant passionné par la résolution de problèmes. Je me
           spécialise principalement dans le développement back-end avec PHP / Symfony.
@@ -77,7 +78,7 @@
         maîtrise et désire approfondir. Néanmoins je suis toujours désireux de connaissances de nouvelles compétences,
         langages et technologies.
       </p>
-      <div class="flex flex-wrap gap-x-16 gap-y-8 justify-center items-center" id="skills-cards"></div>
+      <div class="flex flex-wrap md:gap-x-16  gap-x-4 gap-y-8 justify-center items-center" id="skills-cards"></div>
     </section>
 
     <section id="projects" class="py-32 bg-gradient-to-b from-gray-50 to-gray-100 h-[100vh]">
@@ -88,10 +89,10 @@
         <p class="text-2xl lg:w-[42pc] md:w-[32pc] text-center">J'ai pû participer en tant que développeur web junior à
           quelques projets lors de ma formation</p>
       </div>
-      <div class="flex flex-wrap items-center justify-center gap-x-16">
+      <div class="flex flex-wrap items-center justify-center md:gap-x-16  gap-x-4">
 
         <article
-          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center gap-y-16 p-4 mx-4 my-8 w-[30pc] rounded-xl md:h-[30pc]">
+          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center gap-y-16 p-4  gap-x-4 my-8 w-full sm:w-[20rem] md:w-[30pc] rounded-xl md:h-[30pc]">
 
           <p>Isaac's bravery </p>
 
@@ -106,7 +107,7 @@
           <a href="https://github.com/rozenrade/isaac-webapp" class="link-underline">Lien vers le github de mon
             projet</a>
 
-          <div class="flex justify-between items-center w-full gap-x-16 ">
+          <div class="flex justify-between items-center w-full md:gap-x-16  gap-x-4">
             <p class="">11/2024 - 03/2025</p>
             <p class="max-w-[12pc]">HTML - CSS - Javascript - Symfony - MySQL - MongoDB</p>
           </div>
@@ -114,7 +115,7 @@
         </article>
 
         <article
-          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 p-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center py-12 gap-y-16 mx-4 my-8 w-[30pc] rounded-xl md:h-[30pc]">
+          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 p-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center py-12 gap-y-16 gap-x-4 my-8 w-full sm:w-[20rem] md:w-[30pc] rounded-xl md:h-[30pc]">
           <p>Teona Passenger </p>
 
           <img src="#" alt="Placeholder image figma">
@@ -134,23 +135,23 @@
     </section>
 
   </main>
-
-  <footer>
+  <footer class="">
 
     <div id="contact" class="flex flex-col text-center h-[100vh]">
 
-      <div class=" bg-gray-100 p-4 shadow-md w-[30pc] ml-auto">
+      <div class="bg-gray-100 p-4 shadow-md w-12 w-full sm:w-[20rem] md:w-[30pc]">
         <p>Toujours prêt à créer de nouvelles relations sur <a
             href="https://www.linkedin.com/in/quentin-baillard-99bb70348/">LinkedIn</a></p>
       </div>
 
-      <div class=" bg-gray-100 p-4 shadow-md w-[30pc]">
+      <div class="bg-gray-100 p-4 shadow-md w-12 w-full sm:w-[20rem] md:w-[30pc]">
         <p>Un projet ? Une idée ? Une discussion ? Je reste disponible par mail : <a
             href="mailto:baillardquentin.pro@gmail.com">baillardquentin.pro@gmail.com</a></p>
       </div>
     </div>
 
   </footer>
+
 
   <script src="assets/js/script.js"></script>
   <script src="assets/js/modals.js"></script>
