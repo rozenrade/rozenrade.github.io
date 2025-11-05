@@ -8,6 +8,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
 
   <title>Quentin Baillard</title>
 </head>
@@ -18,7 +20,7 @@
       <div class="max-w-6xl mx-auto px-4 w-full">
         <div class="flex justify-between items-center h-16">
 
-          <img src="./assets/img/logoQuentin.png" alt="Logo" class="h-16 " />
+          <span class="font-[Poppins] text-3xl">QB</span>
 
           <div class="hidden md:flex space-x-8">
             <a href="#home" class="text-gray-800 ">Home</a>
@@ -60,11 +62,11 @@
       <div class="flex flex-wrap items-center justify-center md:gap-x-16  gap-x-4">
 
         <img src="./assets/img/IMG_0167.jpg" alt="Placeholder image profil"
-          class="h-16 md:h-[32pc] border-2 border-gray-300 rounded-full shadow-lg">
+          class="h-[20pc] md:h-[32pc] border-2 border-gray-300 rounded-full shadow-lg mb-12 md:mb-0">
         <p class="text-2xl lg:w-[42pc] md:w-[32pc] w-full">
           Je suis un <strong>Développeur Web & Mobile junior</strong>, j'ai obtenu mon diplôme en Mars 2025. Je suis
           actuellement à la recherche d'une première expérience, étant passionné par la résolution de problèmes. Je me
-          spécialise principalement dans le développement back-end avec PHP / Symfony.
+          spécialise principalement dans le développement back-end avec <strong>PHP / Symfony</strong>.
         </p>
       </div>
     </section>
@@ -82,100 +84,107 @@
     </section>
 
     <section id="projects" class="py-32 bg-gradient-to-b from-gray-50 to-gray-100 min-h-[100vh]">
-
       <div class="flex flex-col justify-center items-center gap-y-16">
-
         <h4 class="text-center text-6xl font-bold">Mes projets</h4>
-
-        <p class="text-2xl lg:w-[42pc] md:w-[32pc] text-center">J'ai pû participer en tant que développeur web junior à
-          quelques projets lors de ma formation</p>
+        <p class="text-2xl lg:w-[42pc] md:w-[32pc] text-center mx-4">Durant mon parcours professionnel, j'ai pu
+          participer à
+          divers projets qui m'ont permis de consolider mes compétences techniques et m'ont ainsi permis l'acquisition
+          de nouvelles compétences, compréhension de nouveaux langages et technologies.</p>
       </div>
-      <div class="flex flex-wrap items-center justify-center md:gap-x-16  gap-x-4">
+
+      <div class="flex flex-wrap items-stretch justify-center md:gap-x-16 gap-x-4 mx-4">
 
         <article
-          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 p-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center pt-12 gap-y-4 gap-x-4 my-8 w-full sm:w-[20rem] md:w-[30pc] rounded-xl md:h-[50pc]">
+          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 p-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-between items-center text-center pt-12 gap-y-4 gap-x-4 my-8 w-full sm:w-[20rem] md:w-[30pc] rounded-xl min-h-[50pc]">
+          <div class="flex flex-col items-center gap-y-4 w-full">
+            <p class="text-4xl font-bold">Isaac's bravery</p>
+            <img src="./assets/img/bindingOfIsaac-project.jpg" alt="Project image"
+              class="w-full h-64 border-2 border-gray-500 object-cover">
+            <p class="text-2xl">Isaac's Bravery est la concrétisation de mon projet personnel que j'ai développé lors de
+              ma première année de Développeur Web & Mobile. C'est un qui se base sur un de mes jeux favoris : <a
+                href="https://store.steampowered.com/app/113200/The_Binding_of_Isaac/"
+                class="hover:text-blue-300 transition-all duration-500 font-bold">The Binding of Isaac</a>. C'est un "
+              Rogue Like " développé par Edmund McMillen, regroupant plus de 600 items, un total de 34 personnages.</p>
+            <a href="https://github.com/rozenrade/isaac-webapp" class="link-underline text-xl">Lien vers le github de
+              mon projet</a>
+          </div>
 
-          <p class="text-4xl font-bold">Isaac's bravery </p>
-
-          <img src="./assets/img/bindingOfIsaac-project.jpg" alt="Project image" class="h-64 border-2 border-gray-500">
-          <p class="text-2xl">Isaac's Bravery est la concrétisation de mon projet personnel que j'ai développé lors de
-            ma première année
-            de Développeur Web & Mobile. C'est un qui se base sur un de mes jeux favoris : <a
-              href="https://store.steampowered.com/app/113200/The_Binding_of_Isaac/"
-              class="hover:text-blue-300 transition-all duration-500 font-bold">The Binding of Isaac</a>. C'est
-            un " Rogue Like " développé par Edmund McMillen, regroupant plus de 600 items, un total de 34 personnages.
-          </p>
-
-          <a href="https://github.com/rozenrade/isaac-webapp" class="link-underline text-xl">Lien vers le github de mon
-            projet</a>
-          <div class="flex justify-between items-center w-full md:gap-x-16 gap-x-4">
+          <div class="flex justify-between items-center w-full md:gap-x-16 gap-x-4 mt-auto">
             <div class="flex flex-col">
               <p class="font-bold text-xl">11/2024</p>
               <p class="font-bold text-xl"> - </p>
               <p class="font-bold text-xl">03/2025</p>
             </div>
 
-            <div class="flex flex-wrap justify-center gap-3 mt-4">
+            <div class="flex flex-wrap justify-center gap-3">
 
               <div class="flex items-center gap-2 bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm shadow">
                 <img src="./assets/icons/html.svg" alt="HTML" class="w-5 h-5">
                 <span>HTML</span>
+
               </div>
 
               <div class="flex items-center gap-2 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm shadow">
                 <img src="./assets/icons/css.svg" alt="CSS" class="w-5 h-5">
                 <span>CSS</span>
+
               </div>
 
               <div class="flex items-center gap-2 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm shadow">
                 <img src="./assets/icons/js.svg" alt="Javascript" class="w-5 h-5">
                 <span>Javascript</span>
+
               </div>
 
               <div class="flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm shadow">
                 <img src="./assets/icons/symfony.svg" alt="Symfony" class="w-5 h-5">
                 <span>Symfony</span>
+
               </div>
 
               <div class="flex items-center gap-2 bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm shadow">
                 <img src="./assets/icons/mongodb.svg" alt="MongoDB" class="w-5 h-5">
                 <span>MongoDB</span>
+
               </div>
 
               <div class="flex items-center gap-2 bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm shadow">
                 <img src="./assets/icons/mysql.svg" alt="MySQL" class="w-5 h-5">
                 <span>MySQL</span>
+
               </div>
 
             </div>
 
           </div>
-
         </article>
 
         <article
-          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 p-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center pt-12 gap-y-4 gap-x-4 my-8 w-full sm:w-[20rem] md:w-[30pc] rounded-xl md:h-[50pc]">
-          <p class="text-4xl font-bold">Teona Passenger </p>
+          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 p-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-between items-center text-center pt-12 gap-y-4 gap-x-4 my-8 w-full sm:w-[20rem] md:w-[30pc] rounded-xl min-h-[50pc]">
+          <div class="flex flex-col items-center gap-y-4 w-full">
+            <p class="text-4xl font-bold">Teona Passenger</p>
+            <img src="./assets/img/teonaPassenger.jpg" alt="Project image"
+              class="w-full h-64 border-2 border-gray-500 object-cover">
+            <p class="text-2xl">Teona Passenger est un projet qui appartient au groupe : <a
+                href="https://www.behindgame.com/"
+                class="hover:text-blue-300 transition-all duration-500 font-bold">Behind Game Group</a>. C'est un projet
+              qui vise à s'inspirer de <a href="https://www.momondo.fr/"
+                class="hover:text-blue-300 transition-all duration-500 font-bold">Momondo</a>, une application web
+              permettant à l'utilisateur de se renseigner sur les moyens/prix afin de voyager, principalement en avion.
+              L'application fait usage d'une API externe vis-à-vis de la fourniture des prix.</p>
+            <p class="text-gray-800">Le site étant en développement, aucun lien d'accès n'est disponible pour le moment.
+            </p>
+          </div>
 
-          <img src="./assets/img/teonaPassenger.jpg" alt="Project image" class="h-64 border-2 border-gray-500">
-          <p class="text-2xl">Teona Passenger est un projet qui appartient au groupe : <a
-              href="https://www.behindgame.com/"
-              class="hover:text-blue-300 transition-all duration-500 font-bold">Behind Game Group</a>. C'est un projet
-            qui vise à
-            s'inspirer de <a href="https://www.momondo.fr/"
-              class="hover:text-blue-300 transition-all duration-500 font-bold">Momondo</a>, une application web
-            permettant à l'utilisateur de se renseigner sur les moyens/prix
-            afin de voyager, principalement en avion. L'application fait usage d'une API externe vis-à-vis de la
-            fourniture des prix.</p>
+          <div class="flex justify-between items-center w-full md:gap-x-16 gap-x-4 mt-auto">
 
-          <a href="#" class="link-underline text-xl">Lien vers les visuels du projet</a>
-          <div class="flex justify-between items-center w-full md:gap-x-16 gap-x-4">
             <div class="flex flex-col">
               <p class="font-bold text-xl">12/2024</p>
               <p class="font-bold text-xl"> - </p>
               <p class="font-bold text-xl">02/2025</p>
             </div>
-            <div class="flex flex-wrap justify-center gap-3 mt-4">
+
+            <div class="flex flex-wrap justify-center gap-3">
 
               <div class="flex items-center gap-2 bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm shadow">
                 <img src="./assets/icons/html.svg" alt="HTML" class="w-5 h-5">
@@ -206,14 +215,47 @@
                 <img src="./assets/icons/mysql.svg" alt="MySQL" class="w-5 h-5">
                 <span>MySQL</span>
               </div>
-            </div>
-          </div>
-        </article>
-      </div>
 
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
     </section>
 
+
+    <section id="contact" class="bg-gradient-to-b from-gray-50 to-gray-100 flex flex-col gap-16">
+
+      <div class="flex flex-col md:flex-row items-center justify-between shadow-lg rounded-xl overflow-hidden">
+
+        <div class="p-8 flex flex-col gap-4">
+
+          <h3 class="text-3xl font-bold">Restons en contact</h3>
+          <p class="text-xl">Je reste disponible et ouvert à toute nouvelle relation sur <a
+              href="https://www.linkedin.com/in/quentin-baillard-99bb70348/"
+              class="text-blue-600 hover:underline font-semibold">LinkedIn</a>.</p>
+
+        </div>
+
+        <div class="p-8 flex flex-col gap-4">
+
+          <h3 class="text-3xl font-bold">Disponible pour vos projets</h3>
+          <p class="text-xl">Que ce soit pour collaborer, partager une idée ou discuter d’un projet, je suis ouvert à
+            toute proposition.</p>
+
+          <div class="flex gap-4 mt-4">
+            <a href="mailto:baillardquentin.pro@gmail.com"
+              class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition">Envoyer un mail</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
   </main>
+
 
   <script src="assets/js/script.js"></script>
   <script src="assets/js/modals.js"></script>
