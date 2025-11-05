@@ -12,7 +12,7 @@
   <title>Quentin Baillard</title>
 </head>
 
-<body class="font-inter bg-white overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-hide">
+<body class="font-inter bg-white overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-hide min-h-screen">
   <header>
     <nav class="bg-white fixed w-full top-0 z-50 shadow-md">
       <div class="max-w-6xl mx-auto px-4 w-full">
@@ -45,7 +45,7 @@
     </nav>
   </header>
 
-  <main class="py-16">
+  <main class="">
     <section id="home"
       class="bg-[url(assets/img/background-black.jpg)] bg-cover bg-center h-[100vh] flex justify-center items-center fade-in opacity-0">
 
@@ -54,7 +54,7 @@
     </section>
 
     <section id="about"
-      class="about-section bg-gradient-to-b from-gray-50 to-gray-100 p-4 shadow-md flex flex-col justify-center items-center text-center py-32 gap-y-16 opacity-0 transform translate-x-20 transition-all duration-700 h-[100vh] ">
+      class="about-section bg-gradient-to-b from-gray-50 to-gray-100 p-4 shadow-md flex flex-col justify-center items-center text-center py-32 gap-y-16 opacity-0 transform translate-x-20 transition-all duration-700 min-h-[100vh] ">
 
       <h2 class="text-6xl font-bold md:text-right">Quentin Baillard</h2>
       <div class="flex flex-wrap items-center justify-center md:gap-x-16  gap-x-4">
@@ -71,7 +71,7 @@
 
 
     <section id="skills"
-      class="skills-section bg-gradient-to-b from-gray-50 to-gray-100 flex flex-col justify-center items-center text-center py-32 opacity-0 transform -translate-x-20 transition-all duration-700 gap-y-16 h-[100vh]">
+      class="skills-section bg-gradient-to-b from-gray-50 to-gray-100 flex flex-col justify-center items-center text-center py-32 opacity-0 transform -translate-x-20 transition-all duration-700 gap-y-16 min-h-[100vh] p-4">
       <h3 class="text-6xl font-bold mb-12 ">Mes compétences</h3>
       <p class="text-2xl lg:w-[42pc] md:w-[32pc] lg:w-[42pc] md:w-[32pc]">
         Au cours de mon parcours, j'ai acquis de nombreuse compétences techniques, plus bas sont présentes celles que je
@@ -81,7 +81,8 @@
       <div class="flex flex-wrap md:gap-x-16  gap-x-4 gap-y-8 justify-center items-center" id="skills-cards"></div>
     </section>
 
-    <section id="projects" class="py-32 bg-gradient-to-b from-gray-50 to-gray-100 h-[100vh]">
+    <section id="projects" class="py-32 bg-gradient-to-b from-gray-50 to-gray-100 min-h-[100vh]">
+
       <div class="flex flex-col justify-center items-center gap-y-16">
 
         <h4 class="text-center text-6xl font-bold">Mes projets</h4>
@@ -92,42 +93,120 @@
       <div class="flex flex-wrap items-center justify-center md:gap-x-16  gap-x-4">
 
         <article
-          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center gap-y-16 p-4  gap-x-4 my-8 w-full sm:w-[20rem] md:w-[30pc] rounded-xl md:h-[30pc]">
+          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 p-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center pt-12 gap-y-4 gap-x-4 my-8 w-full sm:w-[20rem] md:w-[30pc] rounded-xl md:h-[50pc]">
 
-          <p>Isaac's bravery </p>
+          <p class="text-4xl font-bold">Isaac's bravery </p>
 
-          <img src="#" alt="Placeholder image projet">
-          <p>Isaac's Bravery est la concrétisation de mon projet personnel que j'ai développé lors de ma première année
+          <img src="./assets/img/bindingOfIsaac-project.jpg" alt="Project image" class="h-64 border-2 border-gray-500">
+          <p class="text-2xl">Isaac's Bravery est la concrétisation de mon projet personnel que j'ai développé lors de
+            ma première année
             de Développeur Web & Mobile. C'est un qui se base sur un de mes jeux favoris : <a
               href="https://store.steampowered.com/app/113200/The_Binding_of_Isaac/"
               class="hover:text-blue-300 transition-all duration-500 font-bold">The Binding of Isaac</a>. C'est
             un " Rogue Like " développé par Edmund McMillen, regroupant plus de 600 items, un total de 34 personnages.
           </p>
 
-          <a href="https://github.com/rozenrade/isaac-webapp" class="link-underline">Lien vers le github de mon
+          <a href="https://github.com/rozenrade/isaac-webapp" class="link-underline text-xl">Lien vers le github de mon
             projet</a>
+          <div class="flex justify-between items-center w-full md:gap-x-16 gap-x-4">
+            <div class="flex flex-col">
+              <p class="font-bold text-xl">11/2024</p>
+              <p class="font-bold text-xl"> - </p>
+              <p class="font-bold text-xl">03/2025</p>
+            </div>
 
-          <div class="flex justify-between items-center w-full md:gap-x-16  gap-x-4">
-            <p class="">11/2024 - 03/2025</p>
-            <p class="max-w-[12pc]">HTML - CSS - Javascript - Symfony - MySQL - MongoDB</p>
+            <div class="flex flex-wrap justify-center gap-3 mt-4">
+
+              <div class="flex items-center gap-2 bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/html.svg" alt="HTML" class="w-5 h-5">
+                <span>HTML</span>
+              </div>
+
+              <div class="flex items-center gap-2 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/css.svg" alt="CSS" class="w-5 h-5">
+                <span>CSS</span>
+              </div>
+
+              <div class="flex items-center gap-2 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/js.svg" alt="Javascript" class="w-5 h-5">
+                <span>Javascript</span>
+              </div>
+
+              <div class="flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/symfony.svg" alt="Symfony" class="w-5 h-5">
+                <span>Symfony</span>
+              </div>
+
+              <div class="flex items-center gap-2 bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/mongodb.svg" alt="MongoDB" class="w-5 h-5">
+                <span>MongoDB</span>
+              </div>
+
+              <div class="flex items-center gap-2 bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/mysql.svg" alt="MySQL" class="w-5 h-5">
+                <span>MySQL</span>
+              </div>
+
+            </div>
+
           </div>
 
         </article>
 
         <article
-          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 p-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center py-12 gap-y-16 gap-x-4 my-8 w-full sm:w-[20rem] md:w-[30pc] rounded-xl md:h-[30pc]">
-          <p>Teona Passenger </p>
+          class="shadow-lg hover:shadow-2xl transition-all duration-500 bg-blue-100 p-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] flex flex-col justify-center items-center text-center pt-12 gap-y-4 gap-x-4 my-8 w-full sm:w-[20rem] md:w-[30pc] rounded-xl md:h-[50pc]">
+          <p class="text-4xl font-bold">Teona Passenger </p>
 
-          <img src="#" alt="Placeholder image figma">
-          <p>Teona Passenger est un projet qui appartient au groupe : Behind Game Group. C'est un projet qui vise à
-            s'inspirer de Momondo, une application web permettant à l'utilisateur de se renseigner sur les moyens/prix
+          <img src="./assets/img/teonaPassenger.jpg" alt="Project image" class="h-64 border-2 border-gray-500">
+          <p class="text-2xl">Teona Passenger est un projet qui appartient au groupe : <a
+              href="https://www.behindgame.com/"
+              class="hover:text-blue-300 transition-all duration-500 font-bold">Behind Game Group</a>. C'est un projet
+            qui vise à
+            s'inspirer de <a href="https://www.momondo.fr/"
+              class="hover:text-blue-300 transition-all duration-500 font-bold">Momondo</a>, une application web
+            permettant à l'utilisateur de se renseigner sur les moyens/prix
             afin de voyager, principalement en avion. L'application fait usage d'une API externe vis-à-vis de la
             fourniture des prix.</p>
 
-          <a href="#" class="link-underline">Lien vers les visuels du projet</a>
-          <div class="flex justify-between items-center w-full">
-            <p>12/2024 - 02/2025</p>
-            <p class="max-w-[12pc]">HTML - CSS - Javascript - Symfony - React - MySQL</p>
+          <a href="#" class="link-underline text-xl">Lien vers les visuels du projet</a>
+          <div class="flex justify-between items-center w-full md:gap-x-16 gap-x-4">
+            <div class="flex flex-col">
+              <p class="font-bold text-xl">12/2024</p>
+              <p class="font-bold text-xl"> - </p>
+              <p class="font-bold text-xl">02/2025</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 mt-4">
+
+              <div class="flex items-center gap-2 bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/html.svg" alt="HTML" class="w-5 h-5">
+                <span>HTML</span>
+              </div>
+
+              <div class="flex items-center gap-2 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/css.svg" alt="CSS" class="w-5 h-5">
+                <span>CSS</span>
+              </div>
+
+              <div class="flex items-center gap-2 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/js.svg" alt="JavaScript" class="w-5 h-5">
+                <span>JavaScript</span>
+              </div>
+
+              <div class="flex items-center gap-2 bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/react.svg" alt="React" class="w-5 h-5">
+                <span>React</span>
+              </div>
+
+              <div class="flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/symfony.svg" alt="Symfony" class="w-5 h-5">
+                <span>Symfony</span>
+              </div>
+
+              <div class="flex items-center gap-2 bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm shadow">
+                <img src="./assets/icons/mysql.svg" alt="MySQL" class="w-5 h-5">
+                <span>MySQL</span>
+              </div>
+            </div>
           </div>
         </article>
       </div>
@@ -135,23 +214,6 @@
     </section>
 
   </main>
-  <footer class="">
-
-    <div id="contact" class="flex flex-col text-center h-[100vh]">
-
-      <div class="bg-gray-100 p-4 shadow-md w-12 w-full sm:w-[20rem] md:w-[30pc]">
-        <p>Toujours prêt à créer de nouvelles relations sur <a
-            href="https://www.linkedin.com/in/quentin-baillard-99bb70348/">LinkedIn</a></p>
-      </div>
-
-      <div class="bg-gray-100 p-4 shadow-md w-12 w-full sm:w-[20rem] md:w-[30pc]">
-        <p>Un projet ? Une idée ? Une discussion ? Je reste disponible par mail : <a
-            href="mailto:baillardquentin.pro@gmail.com">baillardquentin.pro@gmail.com</a></p>
-      </div>
-    </div>
-
-  </footer>
-
 
   <script src="assets/js/script.js"></script>
   <script src="assets/js/modals.js"></script>
