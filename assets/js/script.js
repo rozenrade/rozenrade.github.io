@@ -1,15 +1,3 @@
-tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: {
-        inter: ["Inter", "sans-serif"],
-      },
-      colors: {
-        "custom-green": "#10B981",
-      },
-    },
-  },
-};
 
 const btn = document.getElementById("menuBtn");
 const menu = document.getElementById("mobileMenu");
@@ -28,6 +16,8 @@ links.forEach((link) => {
     menu.classList.remove("translate-x-0", "opacity-[85%]");
   });
 });
+
+console.log("script.js chargé !");
 
 ////////////////////////////////////////////////////////////////////////////////////
 
